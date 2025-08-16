@@ -1,0 +1,35 @@
+=== Logistic Regression + SMOTE (TEST) ===
+ROC AUC: 0.8364
+PR  AUC: 0.6485
+
+[thr=0.50]
+              precision    recall  f1-score   support
+
+           0     0.9051    0.7295    0.8079      1294
+           1     0.5125    0.7880    0.6211       467
+
+    accuracy                         0.7450      1761
+   macro avg     0.7088    0.7588    0.7145      1761
+weighted avg     0.8010    0.7450    0.7583      1761
+
+
+[thr=0.325] (óptimo por F2)
+Precision=0.4407 | Recall=0.8994 | F1=0.5915
+
+Top 15 coeficientes (abs):
+                                  feature      coef
+                              num__Tenure -1.760526
+                        num__TotalCharges  1.094312
+                   cat__Contract_Two year -0.726696
+             cat__Contract_Month-to-month  0.653292
+         cat__InternetService_Fiber optic  0.644574
+                 cat__InternetService_DSL -0.584508
+                        num__DailyCharges -0.371025
+                      num__MonthlyCharges -0.371025
+                 cat__PaperlessBilling_No -0.337169
+      cat__PaymentMethod_Electronic check  0.332533
+  cat__OnlineSecurity_No internet service -0.262919
+                  cat__InternetService_No -0.262919
+     cat__StreamingTV_No internet service -0.262919
+     cat__TechSupport_No internet service -0.262919
+cat__DeviceProtection_No internet service -0.262919
